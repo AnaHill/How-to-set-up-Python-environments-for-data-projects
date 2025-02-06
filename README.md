@@ -13,10 +13,22 @@ TODO:
 - 
 
 ## oletuspaketit yms ympäristöissä
-
-.condarc tiedosto kansiossa [C:\Users\Omistaja\miniconda3](C:\Users\Omistaja\miniconda3\.condarc)
 - [linkki](https://docs.conda.io/projects/conda/en/latest/user-guide/configuration/settings.html#config-add-default-pkgs)
+
+.condarc tiedosto kansiossa `C:\Users\<username>\miniconda3`
 - esim `create_default_packages`: Always add packages by default
+```yaml
+channels:
+  - https://repo.anaconda.com/pkgs/main
+  - https://repo.anaconda.com/pkgs/r
+  - https://repo.anaconda.com/pkgs/msys2
+
+create_default_packages:
+  - pip
+  - numpy
+  - pandas
+```
+
 
 # Conda ympäristön vienti / tallennus
 conda env export > name_of_file.yml
