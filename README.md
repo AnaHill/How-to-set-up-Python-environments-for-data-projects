@@ -2,7 +2,8 @@
 My proposal how to set up environment for data projects.
 
 # Python environment issues like conda
-TODO:
+TODO: 
+- katso [teksti](temp\temp_python_tee.md)
 - pohdi **mambaa**: [a fast, robust, and cross-platform package manager.](https://mamba.readthedocs.io/en/latest/index.html)
 - lue dataluminan [VS Code for Data and AI Projects](https://datalumina.clickup.com/docs/9015213037/d/h/8cnjezd-17675/ddd52c673443975)
 - Ota käyttöön Data [projektitemplaatti](https://github.com/datalumina/datalumina-project-template)
@@ -27,6 +28,27 @@ create_default_packages:
   - pip
   - numpy
   - pandas
+```
+
+## Esimerkki
+Esim Whipin `whipp-2024.yaml` on https://github.com/davewhipp/whipp-python-env 
+```yml
+name: whipp-2024
+channels:
+  - conda-forge
+
+dependencies:
+  - astropy
+  - ipython
+  - ipywidgets
+  - jupyterlab
+  - matplotlib
+  - numpy
+  - pandas
+  - python=3.12.1
+  - scikit-learn
+  - scipy
+  - seaborn
 ```
 
 
